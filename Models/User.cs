@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Login.Models
 {
+    [Serializable]
     public class User
     {
         [Key]
