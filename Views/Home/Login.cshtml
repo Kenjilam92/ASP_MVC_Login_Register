@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+@model LoginUser;
+<div class="container">
+    <div class="jumbotron row justify-content-between">
+        <h1>Login to this Cool Site!</h1>
+        <a href="/">Register</a>
+    </div>
+    <div class="row">
+        <form action="/signin" method="post" class="row w-100">
+            <div class="d-flex flex-column col-6">
+                <label asp-for="Email"></label>            
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <input asp-for="Email">
+                <label asp-for="Password"></label>            
+                <span asp-validation-for="Password" class="text-danger"></span>
+                <input asp-for="Password">
+                <button class="btn btn-info mt-3 w-fit">Sign in Now</button>
+            </div>
+        </form>
+    </div>
+</div>
